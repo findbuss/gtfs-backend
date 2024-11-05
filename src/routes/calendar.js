@@ -1,12 +1,12 @@
 import express from "express";
 
-import { getAgencies } from "gtfs";
+import { getCalendars } from "gtfs";
 
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  const agencies = getAgencies();
-  res.json(agencies);
+  const calendar = getCalendars();
+  res.json(calendar);
 });
 
 export default router;

@@ -1,12 +1,12 @@
+// routes/fareRules.js
 import express from "express";
-
-import { getAgencies } from "gtfs";
+import { getFareRules } from "gtfs";
 
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  const agencies = getAgencies();
-  res.json(agencies);
+  const fareRules = getFareRules();
+  res.json(fareRules);
 });
 
 export default router;
