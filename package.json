@@ -1,0 +1,19 @@
+{
+  "name": "gtfs-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && node server.js"
+  },
+  "type": "module",
+  "module": "true",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "gtfs": "^4.15.5",
+    "gtfs-backend": "file:"
+  }
+}
